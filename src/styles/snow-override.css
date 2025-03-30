@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto !important;
+}
+
+/* Add these styles to contain the snow effect */
+.snow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 0.8;
+}
+
+/* Update main container styles */
+main {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
