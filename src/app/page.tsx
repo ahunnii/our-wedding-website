@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { HydrateClient } from "~/trpc/server";
+import { Navbar } from "./_components/navbar";
 import { SnowFall } from "./_components/snow";
 
 export default async function Home() {
@@ -9,7 +10,7 @@ export default async function Home() {
       <main className="relative flex min-h-screen w-full flex-col items-center bg-[#2a3b2d] bg-[url('/new-background.webp')] bg-cover bg-center">
         <SnowFall />
         <div className="z-[2] flex h-[60vh] w-full items-center justify-center bg-[url('/hero-image.jpg')] bg-cover bg-center">
-          <Card className="z-10 border-0 bg-transparent text-center">
+          <Card className="z-10 border-0 bg-transparent text-center shadow-none">
             <CardContent className="p-16">
               <p className="mb-2 text-4xl font-normal text-[#8b1a1a]">
                 &apos;Tis the season to get married
@@ -27,8 +28,8 @@ export default async function Home() {
           </Card>
         </div>{" "}
         {/* Gradient overlay - white at top fading to transparent */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-96 bg-gradient-to-b from-white to-transparent"></div>
-        <nav className="sticky top-0 z-[3] w-full border-b-2 border-t-2 border-[#8b1a1a]/30 bg-[#2a3b2d]/90 py-4 shadow-md backdrop-blur-sm">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-96 border-transparent bg-gradient-to-b from-white to-transparent"></div>
+        {/* <nav className="sticky top-0 z-[3] w-full border-b-2 border-t-2 border-[#8b1a1a]/30 bg-[#2a3b2d]/90 py-4 shadow-md backdrop-blur-sm">
           <div className="container mx-auto flex justify-center space-x-8">
             <Link
               href="/"
@@ -67,8 +68,9 @@ export default async function Home() {
               Registry
             </Link>
           </div>
-        </nav>
-        <div className="container mx-auto max-w-4xl py-16">
+        </nav> */}
+        <Navbar />
+        <div className="container mx-auto max-w-4xl px-4 py-16">
           <section id="details" className="mb-16">
             <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
               <CardHeader>
