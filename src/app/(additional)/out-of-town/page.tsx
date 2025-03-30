@@ -174,7 +174,7 @@ export default async function OutOfTown() {
           </CardHeader>
           <CardContent className="text-gray-600">
             <div>
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid gap-2 md:grid-cols-2 md:gap-6">
                 <div>
                   <ul className="space-y-2">
                     <li>

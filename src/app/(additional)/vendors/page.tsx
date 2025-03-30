@@ -49,14 +49,6 @@ export default async function VendorsPage() {
                   >
                     Visit Website
                   </a>
-                  <a
-                    href="https://frankenmuthbrewery.com/private-events/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#8b1a1a] hover:underline"
-                  >
-                    Event Information
-                  </a>
                 </div>
               </div>
             </div>

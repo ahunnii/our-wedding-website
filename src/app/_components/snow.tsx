@@ -1,15 +1,19 @@
-import "~/styles/snow-override.css";
-import "~/styles/snow.css";
+"use client";
+import Snowfall from "react-snowfall";
+// import "~/styles/snow-override.css";
+// import "~/styles/snow.css";
+// import { SnowfallCanvas } from "react-snowfall/lib/SnowfallCanvas";
 
 export const SnowFall = () => {
   return (
-    // Use z-1 to keep snow above background but below content
-    <div className="pointer-events-none fixed left-0 top-0 z-[1] h-screen w-full">
-      <div className="relative h-full w-full">
-        {Array.from({ length: 150 }).map((_, i) => (
-          <div key={i} className="snow" />
-        ))}
-      </div>
-    </div>
+    <Snowfall
+      color="#dee4fd"
+      snowflakeCount={200}
+      radius={[0.5, 3.0]}
+      speed={[0.5, 3.0]}
+      wind={[-0.5, 2.0]}
+      rotationSpeed={[-1.0, 1.0]}
+      opacity={[0.1, 0.2]}
+    />
   );
 };
