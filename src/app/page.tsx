@@ -71,7 +71,7 @@ export default function Home() {
       <Navbar />
       <div className="container mx-auto max-w-4xl px-4 py-16">
         <section id="details" className="mb-16">
-          <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+          <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
             <CardHeader>
               <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
                 Ceremony Details
@@ -93,7 +93,7 @@ export default function Home() {
         </section>
 
         <section id="story" className="mb-16">
-          <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+          <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
             <CardHeader>
               <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
                 Our Story
@@ -126,7 +126,7 @@ export default function Home() {
         </section>
 
         <section id="rsvp">
-          <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+          <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
             <CardHeader>
               <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
                 RSVP Information

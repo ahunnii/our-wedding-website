@@ -7,7 +7,7 @@ import Snowfall from "react-snowfall";
 export const SnowFall = () => {
   return (
     <Snowfall
-      color="#dee4fd"
+      color="#FFFAFA"
       snowflakeCount={200}
       radius={[0.5, 3.0]}
       speed={[0.5, 3.0]}

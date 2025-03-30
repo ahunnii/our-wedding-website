@@ -9,7 +9,7 @@ export const metadata = {
 export default async function VendorsPage() {
   return (
     <>
-      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/95">
+      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/85">
         <CardHeader>
           <CardTitle className="font-madi text-center text-5xl text-[#8b1a1a]">
             Our Amazing Vendors
@@ -25,7 +25,7 @@ export default async function VendorsPage() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {/* Main Vendors Row */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-3">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-3">
           <div className="grid gap-6 p-6 md:grid-cols-2">
             {/* Venue Side */}
             <div className="space-y-4">
@@ -81,7 +81,7 @@ export default async function VendorsPage() {
         </Card>
 
         {/* Secondary Vendors */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-3xl text-[#8b1a1a]">
               Sweet Treats
@@ -105,7 +105,7 @@ export default async function VendorsPage() {
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-3xl text-[#8b1a1a]">
               Floral Design
@@ -129,7 +129,7 @@ export default async function VendorsPage() {
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-3xl text-[#8b1a1a]">
               Entertainment
@@ -155,7 +155,7 @@ export default async function VendorsPage() {
         </Card>
 
         {/* Thank You Note */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-3">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-3">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Supporting Local Businesses

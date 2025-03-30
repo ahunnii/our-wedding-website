@@ -9,7 +9,7 @@ export const metadata = {
 export default async function DetailsPage() {
   return (
     <>
-      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/95">
+      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/85">
         <CardHeader>
           <CardTitle className="font-madi text-center text-5xl text-[#8b1a1a]">
             Wedding Details
@@ -24,7 +24,7 @@ export default async function DetailsPage() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/* Venue & Parking - Span 2 columns */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-2 lg:col-span-2">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2 lg:col-span-2">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Venue & Parking
@@ -75,7 +75,7 @@ export default async function DetailsPage() {
         </Card>
 
         {/* Schedule */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Schedule
@@ -117,7 +117,7 @@ export default async function DetailsPage() {
         </Card>
 
         {/* Menu - Span 2 columns */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-2">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Menu
@@ -165,7 +165,7 @@ export default async function DetailsPage() {
         </Card>
 
         {/* Entertainment */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Entertainment
@@ -186,7 +186,7 @@ export default async function DetailsPage() {
         </Card>
 
         {/* Post-Wedding - Span full width */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-2 lg:col-span-3">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2 lg:col-span-3">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Post-Wedding Celebration

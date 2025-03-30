@@ -9,7 +9,7 @@ export const metadata = {
 export default async function PostWeddingPage() {
   return (
     <>
-      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/95">
+      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/85">
         <CardHeader>
           <CardTitle className="font-madi text-center text-5xl text-[#8b1a1a]">
             Post-Wedding Celebration
@@ -24,7 +24,7 @@ export default async function PostWeddingPage() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* Event Details */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Event Details
@@ -55,7 +55,7 @@ export default async function PostWeddingPage() {
         </Card>
 
         {/* Video Preview */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Water Park Preview
@@ -72,7 +72,7 @@ export default async function PostWeddingPage() {
         </Card>
 
         {/* Admission Information */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Admission Information
@@ -101,7 +101,7 @@ export default async function PostWeddingPage() {
         </Card>
 
         {/* Features */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Water Park Features
@@ -122,7 +122,7 @@ export default async function PostWeddingPage() {
         </Card>
 
         {/* Additional Information - Full Width */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-2">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Additional Information

@@ -9,7 +9,7 @@ export const metadata = {
 export default async function RegistryPage() {
   return (
     <>
-      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/95">
+      <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/85">
         <CardHeader>
           <CardTitle className="font-madi text-center text-5xl text-[#8b1a1a]">
             Wedding Registry
@@ -26,7 +26,7 @@ export default async function RegistryPage() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/* Amazon Registry */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Amazon
@@ -48,7 +48,7 @@ export default async function RegistryPage() {
           </CardContent>
         </Card>
         {/* Zola Registry */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-2">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Zola Registry
@@ -73,7 +73,7 @@ export default async function RegistryPage() {
         </Card>
 
         {/* Thank You Note - Span full width */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/95 md:col-span-2 lg:col-span-3">
+        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2 lg:col-span-3">
           <CardHeader>
             <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
               Thank You
