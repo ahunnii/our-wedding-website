@@ -11,7 +11,7 @@ export default async function PostWeddingPage() {
     <>
       <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/85">
         <CardHeader>
-          <CardTitle className="font-madi text-center text-5xl text-[#8b1a1a]">
+          <CardTitle className="text-center font-madi text-5xl text-[#8b1a1a]">
             Post-Wedding Celebration
           </CardTitle>
         </CardHeader>
@@ -26,7 +26,7 @@ export default async function PostWeddingPage() {
         {/* Event Details */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Event Details
             </CardTitle>
           </CardHeader>
@@ -57,7 +57,7 @@ export default async function PostWeddingPage() {
         {/* Video Preview */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Water Park Preview
             </CardTitle>
           </CardHeader>
@@ -74,7 +74,7 @@ export default async function PostWeddingPage() {
         {/* Admission Information */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Admission Information
             </CardTitle>
           </CardHeader>
@@ -89,7 +89,17 @@ export default async function PostWeddingPage() {
                 </li>
                 <li>
                   <span className="font-semibold">Day Pass:</span> Purchase a
-                  day pass directly from the water park
+                  day pass directly from the water park&nbsp;
+                  <Link
+                    href="https://book.bavarianinn.com/ecomm/shop/calendar/23511825/?productcategoryid=1168&Days=1&AgeCategory=12"
+                    className="text-[#8b1a1a] hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here.
+                  </Link>{" "}
+                  Currently, the day pass is $75 per person, but that can be
+                  subject to change.
                 </li>
               </ul>
               <p className="text-sm italic">
@@ -103,7 +113,7 @@ export default async function PostWeddingPage() {
         {/* Features */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Water Park Features
             </CardTitle>
           </CardHeader>
@@ -124,7 +134,7 @@ export default async function PostWeddingPage() {
         {/* Additional Information - Full Width */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Additional Information
             </CardTitle>
           </CardHeader>

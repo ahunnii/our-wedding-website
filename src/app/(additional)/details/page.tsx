@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 
@@ -11,7 +12,7 @@ export default async function DetailsPage() {
     <>
       <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/85">
         <CardHeader>
-          <CardTitle className="font-madi text-center text-5xl text-[#8b1a1a]">
+          <CardTitle className="text-center font-madi text-5xl text-[#8b1a1a]">
             Wedding Details
           </CardTitle>
         </CardHeader>
@@ -26,50 +27,112 @@ export default async function DetailsPage() {
         {/* Venue & Parking - Span 2 columns */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2 lg:col-span-2">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Venue & Parking
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-gray-600">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div>
-                <h3 className="mb-2 text-2xl font-semibold">Venue</h3>
-                <p className="mb-2">
+          <CardContent className="px-4 py-6 text-gray-700">
+            <div className="grid gap-8 md:grid-cols-2">
+              {/* Venue Section */}
+              <div className="flex flex-col items-center md:items-start">
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="inline-block rounded-full bg-[#8b1a1a]/10 p-2">
+                    <svg
+                      className="h-6 w-6 text-[#8b1a1a]"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                      />
+                      <circle cx="12" cy="9" r="2.5" fill="#8b1a1a" />
+                    </svg>
+                  </span>
+                  <h3 className="font-madi text-2xl font-semibold text-[#8b1a1a]">
+                    Venue
+                  </h3>
+                </div>
+                <p className="mb-2 text-lg">
                   Our wedding will be held at the{" "}
                   <Link
                     href="https://frankenmuthbrewery.com/"
-                    className="text-[#8b1a1a] hover:underline"
+                    className="font-semibold text-[#8b1a1a] underline underline-offset-2 transition-colors hover:text-[#a83232]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Frankenmuth Brewery
                   </Link>
                   .
                 </p>
-                <p className="mb-2">
-                  Address:{" "}
-                  <span className="font-semibold">
-                    425 S Main St, Frankenmuth, MI 48734
+                <p className="mb-2 text-base">
+                  <span className="font-semibold">Address:</span> 425 S Main St,
+                  Frankenmuth, MI 48734
+                </p>
+                <p className="text-base">
+                  The ceremony <span className="mx-1 text-[#8b1a1a]">•</span>{" "}
+                  and reception will both take place at this location.
+                </p>
+              </div>
+              {/* Parking Section */}
+              <div className="flex flex-col items-center md:items-start">
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="inline-block rounded-full bg-[#8b1a1a]/10 p-2">
+                    <svg
+                      className="h-6 w-6 text-[#8b1a1a]"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                    >
+                      <rect x="3" y="7" width="18" height="10" rx="3" />
+                      <circle cx="7.5" cy="16.5" r="1.5" fill="#8b1a1a" />
+                      <circle cx="16.5" cy="16.5" r="1.5" fill="#8b1a1a" />
+                    </svg>
                   </span>
-                </p>
-                <p>
-                  The ceremony and reception will both take place at this
-                  location.
-                </p>
+                  <h3 className="font-madi text-2xl font-semibold text-[#8b1a1a]">
+                    Parking
+                  </h3>
+                </div>
+                <ul className="list-inside list-disc space-y-1 text-base">
+                  <li>Complimentary parking is available at the venue.</li>
+                  <li>
+                    <span className="font-semibold">Main lot:</span> Directly in
+                    front of the entrance (limited, first come first serve).
+                  </li>
+                  <li>
+                    <span className="font-semibold">Overflow:</span> Behind the
+                    Fairfield Inn & Suites or at the Frankenmuth Public Library.
+                  </li>
+                </ul>
               </div>
-              <div>
-                <h3 className="mb-2 text-2xl font-semibold">Parking</h3>
-                <p className="mb-2">
-                  Complimentary parking is available at the venue.
-                </p>
-                <p className="mb-2">
-                  The main parking lot is located directly in front of the venue
-                  entrance, however, the parking lot is small so it is first
-                  come first serve.
-                </p>
-                <p>
-                  The venue recommends parking behind the Fairfield Inn & Suites
-                  or at the Frankenmuth Public Library.
-                </p>
-              </div>
+            </div>
+            <div className="mt-8 flex justify-center">
+              <Link
+                href="/parking.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  className="relative h-full min-h-96 w-full min-w-96 cursor-pointer rounded-lg border-2 border-[#8b1a1a]/20 bg-white drop-shadow-lg"
+                  title="Click to view larger"
+                >
+                  <Image
+                    src="/parking.png"
+                    alt="Frankenmuth Brewery Parking Map"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                    priority
+                  />
+                  <span className="absolute bottom-2 right-2 rounded bg-white/80 px-2 py-1 text-xs text-[#8b1a1a] shadow">
+                    Click to enlarge
+                  </span>
+                </div>
+              </Link>
             </div>
           </CardContent>
         </Card>
@@ -77,7 +140,7 @@ export default async function DetailsPage() {
         {/* Schedule */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Schedule
             </CardTitle>
           </CardHeader>
@@ -119,7 +182,7 @@ export default async function DetailsPage() {
         {/* Menu - Span 2 columns */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Menu
             </CardTitle>
           </CardHeader>
@@ -156,7 +219,8 @@ export default async function DetailsPage() {
                 <h3 className="mb-2 text-2xl font-semibold">Dessert</h3>
                 <ul className="list-disc pl-5">
                   <li>
-                    Wedding cake: Gingerbread flavored and totally awesome!
+                    Wedding cake: Maple flavored and while not as cool as
+                    gingerbread, it&apos;s still pretty awesome!
                   </li>
                 </ul>
               </div>
@@ -167,18 +231,17 @@ export default async function DetailsPage() {
         {/* Entertainment */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Entertainment
             </CardTitle>
           </CardHeader>
           <CardContent className="text-gray-600">
             <ul className="list-disc space-y-1 pl-5">
-              <li>Board games station</li>
-              <li>Live music during cocktail hour</li>
+              <li>Board games</li>
               <li>Caricature artist</li>
               <li>Open bar</li>
               <li>
-                Dance floor with &quot;DJ&quot; Spotify (i.e. dance if you
+                Small dance floor with &quot;DJ&quot; Spotify (i.e. dance if you
                 wanna, but don&apos;t feel obligated)
               </li>
             </ul>
@@ -188,7 +251,7 @@ export default async function DetailsPage() {
         {/* Post-Wedding - Span full width */}
         <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2 lg:col-span-3">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Post-Wedding Celebration
             </CardTitle>
           </CardHeader>

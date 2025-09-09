@@ -73,14 +73,17 @@ export default function Home() {
         <section id="details" className="mb-16">
           <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
             <CardHeader>
-              <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+              <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
                 Ceremony Details
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center text-gray-600">
               <p className="mb-4 text-xl">
                 <span className="font-semibold">When:</span> December 13th, 2025
-                at 4:00 PM
+                at 4:00 PM{" "}
+                <span className="text-base italic">
+                  (Doors open at 3:30 PM so come early to grab a good seat!)
+                </span>
               </p>
               <p className="text-xl">
                 <span className="font-semibold">Where:</span> Frankenmuth
@@ -95,7 +98,7 @@ export default function Home() {
         <section id="story" className="mb-16">
           <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
             <CardHeader>
-              <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+              <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
                 Our Story
               </CardTitle>
             </CardHeader>
@@ -113,7 +116,7 @@ export default function Home() {
                 to roam the streets of Frankenmuth during a light snowfall. It
                 was then I knew I found someone special. Fast forward to two
                 years later. I wanted to propose to her at her favorite place in
-                the world (Taquenninum Falls). But the heavy snowfall changed my
+                the world (Tahquamenon Falls). But the heavy snowfall changed my
                 plan entirely. I then knew it was a sign to propose to her here,
                 in Frankenmuth, at the old wooden bridge. She was so excited,
                 totally didn&apos;t see it coming, and she accepted right after
@@ -128,22 +131,26 @@ export default function Home() {
         <section id="rsvp">
           <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
             <CardHeader>
-              <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+              <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
                 RSVP Information
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center text-gray-600">
               <p className="mb-4 leading-relaxed">
-                Formal invitations will be sent out mid-year 2025.
+                Formal invitations have already been sent out and we are
+                patiently waiting for them to get to us. If you haven&apos;t
+                already RSVP&apos;d, please do so as soon as possible.
               </p>
               <p className="font-semibold text-[#8b1a1a]">
-                Important: All RSVPs must be received by November 1st, 2025
+                Important: All RSVPs must be received by November 1st, 2025. We
+                would be unable to accommodate any RSVPs after this date as this
+                is our final day to have our guest list finalized for the venue.
               </p>
-              <p className="mt-4 text-sm italic">
+              {/* <p className="mt-4 text-sm italic">
                 We kindly request that all guests planning to attend inform us
                 by this date to help us finalize arrangements for our special
                 day.
-              </p>
+              </p> */}
             </CardContent>
           </Card>
         </section>
