@@ -11,7 +11,7 @@ export default async function VendorsPage() {
     <>
       <Card className="mb-8 border-2 border-[#8b1a1a]/20 bg-white/85">
         <CardHeader>
-          <CardTitle className="font-madi text-center text-5xl text-[#8b1a1a]">
+          <CardTitle className="text-center font-madi text-5xl text-[#8b1a1a]">
             Our Amazing Vendors
           </CardTitle>
         </CardHeader>
@@ -23,67 +23,67 @@ export default async function VendorsPage() {
         </CardContent>
       </Card>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-6">
         {/* Main Vendors Row */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-3">
-          <div className="grid gap-6 p-6 md:grid-cols-2">
-            {/* Venue Side */}
-            <div className="space-y-4">
-              <h3 className="font-madi text-center text-3xl text-[#8b1a1a]">
-                Venue & Catering
-              </h3>
-              <div className="text-center">
-                <h4 className="text-2xl font-semibold text-[#2a3b2d]">
-                  Frankenmuth Brewery
-                </h4>
-                <p className="mt-2 text-gray-600">
-                  Michigan&apos;s oldest brewery, providing both our beautiful
-                  venue and delicious catering.
-                </p>
-                <div className="mt-4 flex justify-center gap-4">
-                  <a
-                    href="https://frankenmuthbrewery.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#8b1a1a] hover:underline"
-                  >
-                    Visit Website
-                  </a>
-                </div>
-              </div>
+        {/* Venue & Catering Card */}
+        <Card className="col-span-full border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-3">
+          <CardHeader>
+            <CardTitle className="text-center font-madi text-3xl text-[#8b1a1a]">
+              Venue & Catering
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-center text-gray-600">
+            <h4 className="text-2xl font-semibold text-[#2a3b2d]">
+              Frankenmuth Brewery
+            </h4>
+            <p className="mt-2">
+              Michigan&apos;s oldest brewery, providing both our beautiful venue
+              and delicious catering.
+            </p>
+            <div className="mt-4 flex justify-center gap-4">
+              <a
+                href="https://frankenmuthbrewery.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8b1a1a] hover:underline"
+              >
+                Visit Website
+              </a>
             </div>
+          </CardContent>
+        </Card>
 
-            {/* Photography Side */}
-            <div className="space-y-4">
-              <h3 className="font-madi text-center text-3xl text-[#8b1a1a]">
-                Photography
-              </h3>
-              <div className="text-center">
-                <h4 className="text-2xl font-semibold text-[#2a3b2d]">
-                  Madysonelizabethphotography
-                </h4>
-                <p className="mt-2 text-gray-600">
-                  Capturing all the special moments of our celebration.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://www.facebook.com/madysonelizabethphotography/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#8b1a1a] hover:underline"
-                  >
-                    Visit Website
-                  </a>
-                </div>
-              </div>
+        {/* Photography Card */}
+        <Card className="col-span-full border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-3">
+          <CardHeader>
+            <CardTitle className="text-center font-madi text-3xl text-[#8b1a1a]">
+              Photography
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-center text-gray-600">
+            <h4 className="text-2xl font-semibold text-[#2a3b2d]">
+              Madyson Elizabeth Photography
+            </h4>
+            <p className="mt-2">
+              Capturing all the special moments of our celebration.
+            </p>
+            <div className="mt-4 flex justify-center gap-4">
+              <a
+                href="https://www.facebook.com/madysonelizabethphotography/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8b1a1a] hover:underline"
+              >
+                Visit Website
+              </a>
             </div>
-          </div>
+          </CardContent>
         </Card>
 
         {/* Secondary Vendors */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
+        <Card className="col-span-full border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-3xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-3xl text-[#8b1a1a]">
               Sweet Treats
             </CardTitle>
           </CardHeader>
@@ -105,9 +105,9 @@ export default async function VendorsPage() {
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
+        <Card className="col-span-full border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-3xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-3xl text-[#8b1a1a]">
               Floral Design
             </CardTitle>
           </CardHeader>
@@ -129,9 +129,9 @@ export default async function VendorsPage() {
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85">
+        <Card className="col-span-full border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-2">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-3xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-3xl text-[#8b1a1a]">
               Entertainment
             </CardTitle>
           </CardHeader>
@@ -155,9 +155,9 @@ export default async function VendorsPage() {
         </Card>
 
         {/* Thank You Note */}
-        <Card className="border-2 border-[#8b1a1a]/20 bg-white/85 md:col-span-3">
+        <Card className="col-span-full border-2 border-[#8b1a1a]/20 bg-white/85">
           <CardHeader>
-            <CardTitle className="font-madi text-center text-4xl text-[#8b1a1a]">
+            <CardTitle className="text-center font-madi text-4xl text-[#8b1a1a]">
               Supporting Local Businesses
             </CardTitle>
           </CardHeader>
