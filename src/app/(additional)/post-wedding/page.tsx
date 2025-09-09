@@ -64,8 +64,15 @@ export default async function PostWeddingPage() {
           <CardContent className="text-gray-600">
             <div className="aspect-video w-full bg-gray-200">
               {/* Video will be added here */}
-              <div className="flex h-full items-center justify-center">
-                <p className="text-gray-500">Video coming soon!</p>
+              <div className="relative h-full w-full overflow-hidden rounded-lg border border-[#8b1a1a]/20 bg-black shadow-lg">
+                <iframe
+                  className="absolute left-0 top-0 h-full w-full"
+                  src="https://www.youtube.com/embed/5mBoT7CClfc?rel=0"
+                  title="Bavarian Inn Lodge Water Park Preview"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </CardContent>
