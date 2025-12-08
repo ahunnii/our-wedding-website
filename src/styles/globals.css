@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom fonts for timeline
+ * Place font files in: /public/fonts/
+ * Required files:
+ *   - AlasassyCaps-Regular.woff2 (preferred)
+ *   - AlasassyCaps-Regular.woff (fallback)
+ *   - AlasassyCaps-Regular.ttf (fallback)
+ *   - BaguetScript-Regular.woff2 (preferred)
+ *   - BaguetScript-Regular.woff (fallback)
+ *   - BaguetScript-Regular.ttf (fallback)
+ */
+@font-face {
+  font-family: 'Alasassy Caps';
+  src: url('/fonts/AlasassyCaps-Regular.woff2') format('woff2'),
+       url('/fonts/AlasassyCaps-Regular.woff') format('woff'),
+       url('/fonts/AlasassyCaps-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baguet Script';
+  src: url('/fonts/BaguetScript-Regular.woff2') format('woff2'),
+       url('/fonts/BaguetScript-Regular.woff') format('woff'),
+       url('/fonts/BaguetScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

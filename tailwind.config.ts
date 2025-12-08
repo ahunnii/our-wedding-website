@@ -10,6 +10,8 @@ export default {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
         madi: ["var(--font-madi)"],
         kalam: ["var(--font-kalam)"],
+        alasassy: ["Alasassy Caps", "sans-serif"],
+        baguet: ["Baguet Script", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",
