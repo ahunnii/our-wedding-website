@@ -322,6 +322,7 @@ export default async function TimelinePage() {
               <TimelineItem
                 key={index}
                 date={timeToDate(event.time)}
+                timeString={event.time}
                 title={event.title}
                 description={event.description}
                 status="completed"
@@ -366,6 +367,7 @@ export default async function TimelinePage() {
               <TimelineItem
                 key={index}
                 date={timeToDate(event.time)}
+                timeString={event.time}
                 title={event.title}
                 description={event.description}
                 status="completed"
